@@ -25,8 +25,12 @@ const selectImg = (e) => {
         return;
     }
     const modal = basicLightbox.create(
-        `<img src="${event.target.closest("img").dataset.source}">`
-  );
+        `<img src="${event.target.closest("img").dataset.source
+    }">`
+    );
+    
+  console.log(event.target);
+  console.log(modal.show());
 
 }
 
